@@ -1,0 +1,249 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #d4aa62;
+}
+
+header p {
+    margin: 10px;
+    color: #ddd;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+.hero {
+    min-height: 350px;
+    background: linear-gradient(90deg, #111, #333);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 45px 8%;
+}
+
+.hero div {
+    max-width: 500px;
+}
+
+.small-title {
+    color: #d4aa62;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    line-height: 1.7;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 22px;
+    background: #d4aa62;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.products {
+    padding: 55px 6%;
+    text-align: center;
+}
+
+.products h2,
+.order-section h2 {
+    font-size: 30px;
+}
+
+.subtitle {
+    color: #777;
+    margin: 12px 0 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px #00000015;
+    text-align: left;
+}
+
+.product img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 18px;
+}
+
+.product-info h3 {
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.product-info strong {
+    display: block;
+    color: #a77a32;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.product-info button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background: #111;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.product-info button:hover {
+    background: #a77a32;
+}
+
+.order-section {
+    background: #f6f3ee;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.order-section > p {
+    color: #777;
+    margin: 12px 0 25px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.whatsapp-btn {
+    width: 100%;
+    padding: 16px;
+    margin-top: 25px;
+    background: #25d366;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    line-height: 2;
+}
+
+@media (max-width: 750px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .product img {
+        height: 210px;
+    }
+
+    .product-info {
+        padding: 12px;
+    }
+
+    .product-info h3 {
+        font-size: 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 380px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+  }
